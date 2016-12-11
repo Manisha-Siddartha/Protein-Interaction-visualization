@@ -1,7 +1,7 @@
 
 
 		
- 			 var height = 600,
+ 			 var height = 400,
 				format = d3.time.format('%m/%Y'),
 				causes = ['disease', 'wounds', 'other'],
 				labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
