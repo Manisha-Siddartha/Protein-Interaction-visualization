@@ -20,9 +20,9 @@ var Chart = {};
 
 Chart.rose = function() {
 
-	var margin = {'top': 10, 'right': 10, 'bottom': 10, 'left': 10},
-		height = 450,
-		width = 450,
+	var margin = {'top': 20, 'right': 20, 'bottom': 20, 'left': 20},
+		height = 500,
+		width = 500,
 		color = 'rgb(0,0,0)',
 		area = function(d) { return [d.y]; },
 		angle = function(d) { return d.x; },
@@ -125,10 +125,10 @@ Chart.rose = function() {
 	function createWedges( data ) {
 
 		// Create the wedge groups:
-		wedgeGroups = graph.selectAll('.wedgeGroup')
+		wedgeGroups = graph.selectAll('.wedgeGroup1')
 			.data( data )
 		  .enter().append('svg:g')
-		  	.attr('class', 'wedgeGroup')
+		  	.attr('class', 'wedgeGroup1')
 		  	.attr('transform', 'scale(0,0)');
 
 		// Create the wedges:
@@ -296,7 +296,7 @@ Chart.legend = function( entries ) {
 		height,
 		symbolRadius = 5;
 
-	legend.container = d3.select('body').append('div')
+	legend.container = d3.select('figure').append('div')
 		.attr('class', 'legend');
 
 	height = parseInt( d3.select('.legend').style('height'), 10);
@@ -361,10 +361,11 @@ Chart.legend = function( entries ) {
 
 Chart.slider = function( minVal, maxVal, step ) {
 
-	d3.select('body').append('input')
+	d3.select('div.legend').append('div').append('input')
 		.attr('class', 'slider')
 		.attr('type', 'range')
 		.attr('name', 'slider')
+		.attr('width', 100)
 		.attr('min', minVal)
 		.attr('max', maxVal)
 		.attr('step', 0.001)
@@ -373,13 +374,13 @@ Chart.slider = function( minVal, maxVal, step ) {
 	d3.select("input").on("change", function() {
 	  var value = Math.round(this.value);
 
-	  d3.selectAll('.wedgeGroup')
+	  d3.selectAll('.wedgeGroup1')
 	  	.filter( function(d,i) { return i < value; } )
 	  	.transition()
 	  		.duration( 500 )
 	  		.attr( 'transform', 'scale(1,1)');
 	  
-	  d3.selectAll('.wedgeGroup')
+	  d3.selectAll('.wedgeGroup1')
 	  	.filter( function(d,i) { return i >= value; } )
 	  	.transition()
 	  		.duration( 500 )
@@ -390,7 +391,7 @@ Chart.slider = function( minVal, maxVal, step ) {
 
 }; // end FUNCTION slider()
 
-Chart.rose1 = function() {
+Chart1.rose1 = function() {
 
 	var margin = {'top': 1, 'right': 1, 'bottom': 1, 'left': 1},
 		height = 54,
@@ -413,7 +414,7 @@ Chart.rose1 = function() {
 		.outerRadius( function(d,i) { return radiusScale( d.radius ); } )
 		.startAngle( function(d,i) { return angleScale( d.angle ); } );
 
-	function chart( selection ) {
+	function chart1( selection ) {
 
 		selection.each( function( data ) {
 
@@ -583,75 +584,75 @@ Chart.rose1 = function() {
 	}; // end FUNCTION createWedges()	
 
 	// Set/Get: margin
-	chart.margin = function( _ ) {
+	chart1.margin = function( _ ) {
 		if (!arguments.length) return margin;
 		margin = _;
-		return chart;
+		return chart1;
 	};
 
 	// Set/Get: width
-	chart.width = function( _ ) {
+	chart1.width = function( _ ) {
 		if (!arguments.length) return width;
 		width = _;
-		return chart;
+		return chart1;
 	};
 
 	// Set/Get: height
-	chart.height = function( _ ) {
+	chart1.height = function( _ ) {
 		if (!arguments.length) return height;
 		height = _;
-		return chart;
+		return chart1;
 	};
 
 	// Set/Get: area
-	chart.area = function( _ ) {
+	chart1.area = function( _ ) {
 		if (!arguments.length) return area;
 		area = _;
-		return chart;
+		return chart1;
 	};
 
 	// Set/Get: angle
-	chart.angle = function( _ ) {
+	chart1.angle = function( _ ) {
 		if (!arguments.length) return angle;
 		angle = _;
-		return chart;
+		return chart1;
 	};
 
 	// Set/Get: label
-	chart.label = function( _ ) {
+	chart1.label = function( _ ) {
 		if (!arguments.length) return label;
 		label = _;
-		return chart;
+		return chart1;
 	};
 
 	// Set/Get: domain
-	chart.domain = function( _ ) {
+	chart1.domain = function( _ ) {
 		if (!arguments.length) return domain;
 		domain = _;
-		return chart;
+		return chart1;
 	};
 
 	// Set/Get: legend
-	chart.legend = function( _ ) {
+	chart1.legend = function( _ ) {
 		if (!arguments.length) return legend;
 		legend = _;
-		return chart;
+		return chart1;
 	};
 
 	// Set/Get: delay
-	chart.delay = function( _ ) {
+	chart1.delay = function( _ ) {
 		if (!arguments.length) return delay;
 		delay = _;
-		return chart;
+		return chart1;
 	};
 
 	// Set/Get: duration
-	chart.duration = function( _ ) {
+	chart1.duration = function( _ ) {
 		if (!arguments.length) return duration;
 		duration = _;
-		return chart;
+		return chart1;
 	};
 
-	return chart;
+	return chart1;
 
 }; // end FUNCTION rose()

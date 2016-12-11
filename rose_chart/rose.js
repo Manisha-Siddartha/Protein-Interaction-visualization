@@ -1,19 +1,17 @@
 
 
 		
- 			 var height = 400,
-				format = d3.time.format('%m/%Y'),
-				causes = ['disease', 'wounds', 'other'],
-				labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+ 			 
 
 			// Add a title:
 
  			function DrawGraph(data,source,target){
 
- 				
+ 				var height = 600;
+			    
 				var rose = Chart.rose();			
 
-				causes=[source,target];
+				var causes=[source,target];
 
 				// Where the maximum value gives us the maximum radius:
 				var maxRadius = 40;
@@ -66,11 +64,13 @@
 
 				// Create a legend:
 				Chart.legend( causes );
-
+				// Create a slider:
+				Chart.slider( 0, data.length, 1 );
 				
 				
 			
 }
+var Chart1={};
 function draw_rose(){
   
       var height = 55;
@@ -94,7 +94,7 @@ function draw_rose(){
        var source=gene_list[i];
        var target=gene_list[j];
             
-      var rose=Chart.rose1();
+      var rose=Chart1.rose1();
          var k=0;
         rose .legend( causes )
           .width( width )

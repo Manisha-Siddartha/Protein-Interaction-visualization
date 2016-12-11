@@ -12,6 +12,9 @@
 <script type="text/javascript" src="rose_chart/script.js"></script>
 <link rel="stylesheet" type="text/css" href="rose_chart/reset.css">
 <link rel="stylesheet" type="text/css" href="rose_chart/style.css">
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="freelancer.min.css" rel="stylesheet">
+
 <style>
 
 .axis {
@@ -69,7 +72,22 @@ svg {
     stroke: #ddd;
   }
 </style>
-<body onload="loaddata();">
+<body onload="loaddata();" id="page-top" class="index">
+<!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand">Protein Interaction Network</a>
+            </div>
+
+         </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <br><br><br><br><br><br>
 
 <div id="vizcontainer">
 <div id="sidebar">
