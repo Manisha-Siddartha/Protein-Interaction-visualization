@@ -54,6 +54,8 @@ Able to retrieve the mutated genes for a particular cancer type and implemented 
 
 When clicked on the rose_chart of particular cancer type we are able to show the diagnosis of age on a bar graph of that cancer type. which plots the count of members under particular age that were affected by that cancer.
 
+![ScreenShot](https://github.com/venkatesh45/Protein-Interaction-visualization/blob/master/bar%20graph.png)
+
 
 //Interesting findings:
 
