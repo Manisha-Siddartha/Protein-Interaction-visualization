@@ -18,7 +18,7 @@
 
 var Chart = {};
 
-Chart1.rose = function() {
+Chart.rose = function() {
 
 	var margin = {'top': 20, 'right': 20, 'bottom': 20, 'left': 20},
 		height = 500,

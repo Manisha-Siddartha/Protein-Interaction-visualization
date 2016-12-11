@@ -1,18 +1,17 @@
 
 
 		
- 			 
-			// Add a title:
-			var Chart1={};
- 			function DrawGraph(data,source,target){
-
- 				var height = 600,
+ 			 var height = 600,
 				format = d3.time.format('%m/%Y'),
 				causes = ['disease', 'wounds', 'other'],
 				labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-				
-				var rose = Chart1.rose();			
+			// Add a title:
+
+ 			function DrawGraph(data,source,target){
+
+ 				
+				var rose = Chart.rose();			
 
 				causes=[source,target];
 
@@ -74,7 +73,7 @@
 }
 function draw_rose(){
   
-      var height = 65;
+      var height = 55;
 
       for(i=0;i<10;i++){
 
@@ -90,7 +89,7 @@ function draw_rose(){
 
         var dataset1 = data.slice(0,12);
         
-        var width = 65;
+        width = 55;
        
        var source=gene_list[i];
        var target=gene_list[j];
@@ -109,8 +108,8 @@ function draw_rose(){
         d3.select( "#some")
         .append("svg:svg")
         .datum( dataset1 )
-        .attr("x", function (d) {return (i * 65)+45})
-      .attr("y", function (d) {return (j * 65)+45})
+        .attr("x", function (d) {return (i * 55)+45})
+      .attr("y", function (d) {return (j * 55)+45})
           .call( rose );
           
 
