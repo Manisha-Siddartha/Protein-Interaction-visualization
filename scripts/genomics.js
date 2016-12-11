@@ -32,7 +32,7 @@ function getData(geneName){
   	else{
   				 		
 			for (var i=0;i<10;i++){  
-				var strServer = "http://www.cbioportal.org/webservice.do?";	
+				var strServer = "//www.cbioportal.org/webservice.do?";	
 				// Profile blca_tcga_pub_gistic  blca_tcga_pub_mutations
 				var study = studyIds[i];
 				var profile = profileIds[p];
