@@ -3,7 +3,7 @@ TTU CS5331 Project 3: Data Visualization Weekly Report
 
 Click on this link to view the working prototype. 
 
-http://myweb.ttu.edu/vpapinen/
+http://myweb.ttu.edu/vpapinen/1212/
 
 Please click to watch the overview video.
 
