@@ -34,7 +34,7 @@ to retrieve the mutated genes for a particular cancer type and implemented the r
 
 
 When you select a particular cell in the matrix, rose chart will be ploted with legands, labels and slider.
-![ScreenShot](https://github.com/venkatesh45/Protein-Interaction-visualization/blob/master/DV-1.png)
+![ScreenShot](https://github.com/venkatesh45/Protein-Interaction-visualization/blob/master/DV-1.PNG)
 
 When clicked on the rose_chart of particular cancer type we are able to show the diagnosis of age on a bar graph of that cancer type. which plots the count of members under particular age that were affected by that cancer.
 
