@@ -1,8 +1,6 @@
 # Protein-Interaction-visualization
 TTU CS5331 Project 3: Data Visualization Weekly Report
 
-Our web application link
-
 Click on this link to view the working prototype. 
 
 https://github.com/venkatesh45/Protein-Interaction-visualization
@@ -25,6 +23,8 @@ ScreenShot of entire project:
 
 ![ScreenShot](https://github.com/venkatesh45/Protein-Interaction-visualization/blob/master/finalscreenshot.png)
 
+Work By Manisha:
+
 Able to retrieve the mutated genes for a particular cancer type and implemented the relation between the mutated gene of a particular cancer with other mutated gene of different cancer using the adjacency matrix with x and y axis to be mutated genes of a cancer types that occur in all cancer type.The cancers contribute to the arms of rose chart. 
 
 1. screenshot1:
@@ -33,13 +33,19 @@ Able to retrieve the mutated genes for a particular cancer type and implemented 
 2. screenshot2:
 ![ScreenShot](https://github.com/venkatesh45/Protein-Interaction-visualization/blob/master/2016-12-10%20(1).png)
 
+Work By Venkatesh:
+
+
+Worked By Vidya:
 When clicked on the rose_chart of particular cancer type we are able to show the diagnosis of age on a bar graph of that cancer type. which plots the count of members under particular age that were affected by that cancer.
 
 ![ScreenShot](https://github.com/venkatesh45/Protein-Interaction-visualization/blob/master/bar%20graph.png)
 
 Each Student Paticipation:
 
-Below are the duties of each student in our group: Venkatesh:
+Below are the duties of each student in our group:
+
+Venkatesh:
 
 1. Retrieved the cancer data for sample set of protiens.
 2. Able to visualise the cancer data on rose chart.
