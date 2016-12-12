@@ -26,11 +26,11 @@ ScreenShot of entire project:
 
 Inorder to retrieve the mutated genes for a particular cancer Study and implement the relation between the mutated gene of a particular cancer study with other mutated gene of different cancer study we used adjacency matrix with x and y axis to be mutated genes of a cancer types that occur in all cancer type.The cancers contribute to the arms of rose chart. 
 
-![ScreenShot](https://github.com/venkatesh45/Protein-Interaction-visualization/blob/master/DV-5.png)
+![ScreenShot](https://github.com/venkatesh45/Protein-Interaction-visualization/blob/master/DV-5.PNG)
 
 Every cell has data generated from http://www.cbioportal.org/ dynamically using the Web API
 
-![ScreenShot](https://github.com/venkatesh45/Protein-Interaction-visualization/blob/master/DV-6.png)
+![ScreenShot](https://github.com/venkatesh45/Protein-Interaction-visualization/blob/master/DV-6.PNG)
 
 When you select a particular cell in the matrix, rose chart will be ploted with legands, labels and slider.
 
