@@ -21,7 +21,7 @@ Project summary: This project concentrates on taking a sample set of protiens an
 
 ScreenShot of entire project:
 
-![ScreenShot]()
+![ScreenShot](https://github.com/venkatesh45/Protein-Interaction-visualization/blob/master/DV-0.PNG)
 
 
 Inorder to retrieve the mutated genes for a particular cancer Study and implement the relation between the mutated gene of a particular cancer study with other mutated gene of different cancer study we used adjacency matrix with x and y axis to be mutated genes of a cancer types that occur in all cancer type.The cancers contribute to the arms of rose chart. 
@@ -56,7 +56,8 @@ When clicked on the rose_chart of particular cancer type we are able to show the
 
 Each Student Paticipation:
 
-Below are the duties of each student in our group:
+
+Contribution of Each Team Member to the Project:
 
 Venkatesh:
 
@@ -84,8 +85,10 @@ Manisha nalla
 
 sree hari:
 
+1. Dynamically displayed the rose charts in the matrix
+2. Legands for Rose Chart
+3. Slider for Rose Chart
 
-Interesting findings:
  
 Highlights of features implemented in this project:
 
