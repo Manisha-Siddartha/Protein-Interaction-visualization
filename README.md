@@ -7,8 +7,7 @@ http://myweb.ttu.edu/vpapinen/1212/
 
 Please click to watch the overview video.
 
-video
-
+(http://myweb.ttu.edu/vpapinen/project.webm)
 
 Project By :
 
