@@ -7,7 +7,8 @@ http://myweb.ttu.edu/vpapinen/1212/
 
 Please click to watch the overview video.
 
-(http://myweb.ttu.edu/vpapinen/project.webm)
+[![ScreenShot](https://github.com/venkatesh45/Protein-Interaction-visualization/blob/master/DV-0.PNG)](https://github.com/venkatesh45/Protein-Interaction-visualization/master/video.mp4)
+
 
 Project By :
 
